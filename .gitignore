@@ -1,0 +1,6 @@
+config/config.php
+.vscode/
+.idea/
+*.log
+Thumbs.db
+uploads/
