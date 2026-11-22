@@ -4,5 +4,6 @@
         'db_name' => 'voting_system',
         'db_user' => 'root',
         'db_pass' => '',
+        'base_url'  => '/vote_sys',
+        'debug'     => true, 
     ];
->
