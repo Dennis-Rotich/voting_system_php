@@ -1,4 +1,3 @@
 <?php
-    require __DIR__ . '/../config/db.php';
-    $count = $pdo->query('SELECT COUNT(*) AS c FROM users') ->fetch()['c'];
-    echo "Setup works. Users in database: " . (int)$count;
+require __DIR__ . '/../includes/bootstrap.php';
+redirect(current_user() ? home_for(current_user()) : 'public/login.php');
