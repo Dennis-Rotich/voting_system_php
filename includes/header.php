@@ -25,7 +25,7 @@
     </div>
   </div>
 </nav>
-<main class="container" style="max-width:720px">
+<main class="container" style="max-width:<?= e($maxWidth ?? '720px') ?>">
 <?php if ($flash): ?>
   <div class="alert alert-<?= $flash['type'] === 'error' ? 'danger' : 'success' ?>"><?= e($flash['message']) ?></div>
 <?php endif; ?>

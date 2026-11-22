@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/../includes/bootstrap.php';
 require_login();
+require_role('voter');
 
 $pageTitle = 'Ballot';
 require __DIR__ . '/../includes/header.php';
